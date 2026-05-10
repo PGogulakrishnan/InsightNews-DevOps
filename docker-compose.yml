@@ -1,0 +1,7 @@
+services:
+  insight-news:
+    build: .
+    ports:
+      - "8080:80"
+    container_name: insight-news-app
+    restart: unless-stopped
